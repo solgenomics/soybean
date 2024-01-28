@@ -5,9 +5,9 @@ services:
 
     image: breedbase/breedbase:latest
 
-    container_name: breedbase_sugarcane_db
+    container_name: breedbase_soybean_db
     ports:
-      - 8102:8080
+      - 8103:8080
     volumes:
       - webdata:/home/production/volume
       - type: bind
