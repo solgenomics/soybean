@@ -1,0 +1,19 @@
+<%args>
+$schema
+$static_content_path => undef
+$show_accept_dialog => undef
+</%args>
+
+<center>
+<h1>Welcome to SoybeanBase!</h1>
+<br />
+<img src="https://cornell.box.com/shared/static/6baujobjqciy9dullzkgu3w241hjk864.jpeg" width="225" />
+<br/>
+<!-- & homepage/carousel.mas & -->
+<br/>
+</center>
+
+<br/>
+
+
+<& homepage/github_pullrequests.mas &>

@@ -3,7 +3,7 @@ version: "3.7"
 services:
   breedbase:
 
-    image: breedbase/breedbase:latest
+    image: breedbase/breedbase:v1.03
 
     container_name: breedbase_soybean_db
     ports:
@@ -16,6 +16,15 @@ services:
       - type: bind
         source: sgn_local.conf
         target: /home/production/cxgn/sgn/sgn_local.conf
+      - type: bind
+        source: mason
+        target: /home/production/cxgn/cassava/mason
+      - type: bind
+        source: /home/production/soybean/footer_body.mas
+        target: /home/production/cxgn/sgn/mason/site/footer/body.mas
+      - type: bind
+        source: /home/production/soybean/analytics.mas
+        target: /home/production/cxgn/cassava/mason/site/header/analytics.mas
       - type: bind
         source: db_dumps
         target: /db_dumps
