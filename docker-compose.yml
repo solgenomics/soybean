@@ -16,11 +16,11 @@ services:
         source: empty_db_without.test_users.sql
         target: /home/production/empty_dump.sql
       - type: bind
-        source: sgn_local.conf
+        source: ./sgn_local.conf
         target: /home/production/cxgn/sgn/sgn_local.conf
       - type: bind
-        source: mason
-        target: /home/production/cxgn/soybean/mason
+        source: ./mason
+        target: /home/production/cxgn/cassava/mason
       - type: bind
         source: /home/production/soybean/footer_body.mas
         target: /home/production/cxgn/sgn/mason/site/footer/body.mas
