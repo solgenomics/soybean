@@ -7,7 +7,7 @@ services:
 
     container_name: breedbase_soybean_db
     ports:
-      - 8103:8080
+      - 8102:8080
     volumes:
       - webdata:/home/production/volume
       - type: bind
