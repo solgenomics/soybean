@@ -3,9 +3,10 @@ version: "3.7"
 services:
   breedbase:
 
-    image: breedbase/breedbase:v1.03
+    image: breedbase/breedbase:v1.05
 
     container_name: breedbase_soybean_web
+    restart: always
     ports:
       - 8106:8080
     volumes:
@@ -22,10 +23,10 @@ services:
         source: ./mason
         target: /home/production/cxgn/cassava/mason
       - type: bind
-        source: /home/production/soybean/footer_body.mas
+        source: ./footer_body.mas
         target: /home/production/cxgn/sgn/mason/site/footer/body.mas
       - type: bind
-        source: /home/production/soybean/analytics.mas
+        source: ./analytics.mas
         target: /home/production/cxgn/cassava/mason/site/header/analytics.mas
       - type: bind
         source: db_dumps
