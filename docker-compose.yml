@@ -20,7 +20,7 @@ services:
         target: /home/production/cxgn/sgn/sgn_local.conf
       - type: bind
         source: mason
-        target: /home/production/cxgn/cassava/mason
+        target: /home/production/cxgn/soybean/mason
       - type: bind
         source: /home/production/soybean/footer_body.mas
         target: /home/production/cxgn/sgn/mason/site/footer/body.mas
